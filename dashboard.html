@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <h2 class="logo">Food Recipes</h2>
+    <ul>
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="dashboard-container">
+    <h1>Welcome FlavorNesters👋</h1>
+    <div class="recipes">
+        <!-- {% for recipe in recipes %} -->
+        <div class="card">
+            <h3>FlavorNest offers a wide range of recipes that are easy to follow</h3>
+            <p>Click the box below to see what we offer 😜</p>
+            <a href="myrecipes.html">View Recipe</a>
+        </div>
+        <!-- {% endfor %} -->
+        <h3>Not finding whatwhat you're looking for?<br>Explore our buit in AI services that makes finding a meal of your choice easier! <a href="index.html">Click Here</a></h3>
+    </div>
+</div>
+</body>
+</html>
+
+
